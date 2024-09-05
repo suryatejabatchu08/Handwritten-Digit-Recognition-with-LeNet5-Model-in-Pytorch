@@ -75,9 +75,9 @@ cnn_model = SimpleCNN()
 lenet_model = LeNet5()
 
 #Loading the pre-trained model weights
-mlp_model.load_state_dict(torch.load('MLP_model.pth', map_location=torch.device('cpu')))
-cnn_model.load_state_dict(torch.load('CNN_model.pth', map_location=torch.device('cpu')))
-lenet_model.load_state_dict(torch.load('LeNet5_model.pth', map_location=torch.device('cpu')))
+mlp_model.load_state_dict(torch.load('Trained_Model_Paths/MLP_model.pth', map_location=torch.device('cpu')))
+cnn_model.load_state_dict(torch.load('Trained_Model_Paths/CNN_model.pth', map_location=torch.device('cpu')))
+lenet_model.load_state_dict(torch.load('Trained_Model_Paths/LeNet5_model.pth', map_location=torch.device('cpu')))
 
 #Setting the models to evaluation mode
 mlp_model.eval()
